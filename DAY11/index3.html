@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let fruits = ["Apple","Mango","Orange"];
+        //array methods
+        //1.map-it will transform each element from the array
+        let upper = fruits.map(fruit => fruit.toUpperCase());
+        console.log(upper);
+
+        //2.filter-it will keep the items that match the condition
+        let checkfruits = fruits.filter(fruit => fruit.includes("Orange"));
+        console.log(checkfruits);
+
+
+        //3.find-going to give us the first item that matches the condition
+        let found = fruits.find(fruit => fruit === ("Orange"));
+        console.log(found);
+
+        //4.sum-does item match
+        let some = fruits.some(fruit => fruit === "Kiwi");
+        console.log(some);
+
+        //5.every-do all the items satisfy the condition or not
+        let every = fruits.every(fruit => fruit.lenght > 2)
+        console.log(every);
+    </script>
+</body>
+
+</html>

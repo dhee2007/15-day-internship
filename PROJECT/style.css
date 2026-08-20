@@ -1,0 +1,392 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+/*navbar*/
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: aquamarine;
+    align-items: center;
+    color: black;
+    padding: 35px;
+}
+.LOGO{
+    color: rgb(18, 16, 71);
+    font-weight: bold;
+    font-size: 30px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    animation:Move 2s ease infinite
+}
+.links a{
+    text-decoration: none;
+    color:darkblue;
+    font-size: 30px;
+    transition: color 1s ease;
+}
+.links a:hover{
+    color: black;
+}
+@keyframes Move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(15px)
+    }
+}
+.theme-toggle{
+    font-size: 30px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius:8px ;
+}
+.Hero-section{
+   background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+   padding: 150px;
+   color: beige;
+   text-align: center;
+}
+.Hero-section h1{
+    font-size: 50px;
+    color: aqua;
+    margin-bottom: 20px;
+    animation:Fadeinup 2s ease infinite ;
+}
+.Hero-section p{
+    margin-bottom: 25px;
+    color: aqua;
+    font-size: 25px;
+}
+@keyframes Fadeinup {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.hero-button{
+    color: bisque;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 15px;
+}/*not neccessary*/
+.btn-one{
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    border:2px solid white;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+.btn-two{
+    color: beige;
+    text-decoration: none;
+    border:2px solid white;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 15px;
+}
+.btn-one:hover{
+    background:transparent;
+    border: 2px solid white;
+    color: beige;   
+}
+.btn-two:hover{
+    background: antiquewhite;
+    color: rgb(12, 12, 12);
+}
+
+/*about section*/
+.About-section{
+    background-color: floralwhite;
+    padding:20px ; 
+    align-items: center;
+    text-align: center;
+}
+.About-section h2{
+font-size: 40px;
+margin-bottom: 10px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:15px;
+}
+.caption{
+    margin-top: 20px;
+    color: darkblue;
+    font-size: 30px;
+}
+.about-text{
+    font-size: 25px;
+}
+
+/*skill section*/
+.skill-section{
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+.Skill-box{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    color: aqua;
+    margin-left: 450px;
+}
+.skillitem{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.skill-section h2{
+    color: beige;
+    font-size: 30px;
+    font-weight: bold;
+}
+.skillitem:hover{
+    color: rgb(235, 245, 44);
+}
+
+/*project section*/
+.project-section{
+    padding: 25px;
+}
+.Project-grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(19, 1, 105);
+    margin-top:30px;
+    padding: 15px;
+}
+.project-section h2{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.Project-card{
+    border: 2px solid black;
+    background-color: cyan;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Project-card:hover{
+    background-color: white;
+    gap: 20px;
+    border-radius: 20px;
+}
+.Project-card h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.Project-card p{
+    font: size 15px;
+    margin-top: 10px;
+}
+.project-tag{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.app{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(45, 137, 241);
+}
+.app:hover{
+    background-color: azure;
+}
+/*Contact section*/
+.contact-section{
+    background:url(https://static.vecteezy.com/system/resources/thumbnails/008/617/161/small_2x/abstract-gradient-pastel-blue-and-purple-background-neon-pastel-color-template-for-website-or-presentation-free-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    
+}
+.contact-section h2{
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 559px;
+}
+.Form{
+    margin-bottom: 15px;
+}
+.Form label{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    /*display:block -block comes down*/
+}
+.Form input,
+.Form textarea{
+    width: 500px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.Form input:focus,
+.Form textarea:focus{
+    outline: none;
+    border-color: darkblue;
+}
+#form{
+    padding-left: 499px;
+}
+.click{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+.click:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: darkblue;
+    
+}
+.foot{
+    background-color: black;
+    padding: 30px;
+}
+.foot p{
+    color: azure;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ft{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.ft a{
+    text-decoration: none;
+    color: aqua;
+}
+.ft a:hover{
+    color: white;
+}
+/*for dark mode*/
+.body{
+    background-color: black;
+    color: white;
+}
+/*for the light mode*/
+body.light-theme{
+    background-color: whitesmoke;
+    color: darkblue;
+}
+body.light-theme .navbar{
+    background-color: bisque;
+    color:darkblue;
+}
+body.light-theme .LOGO{
+    color: black;
+}
+body.light-theme .links a{
+    color: darkblue;
+}
+body.light-theme .links a:hover{
+    color: black;
+}
+body.light-theme .Hero-section{
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+body.light-theme .Hero-section h1{
+    color: black;
+}
+body.light-theme .Hero-section p{
+    color: black;
+}
+body.light-theme .btn-one{
+    background-color: rgb(202, 151, 248);
+    color: black;
+    border-color: black;
+}
+
+body.light-theme .btn-two{
+    color:black;
+    border-color: black;
+    background: transparent;
+}
+body.light-theme .btn-one:hover{
+     background-color: transparent;
+    color: black;
+}
+body.light-theme .btn-two:hover{
+    background-color: rgb(202, 151, 248);
+    color: black;
+    border-color: black;
+}
+body.light-theme .About-section{
+    background-color: azure;
+}
+body.light-theme .About-section h2{
+    color: black;
+}
+body.light-theme .caption{
+    color: black;
+}
+body.light-theme .skill-section{
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 77%, rgba(148, 187, 233, 1) 100%);
+}
+body.light-theme .Skill-box{
+    color: black;
+}
+body.light-theme .skillitem{
+    border-color:black ;
+}
+body.light-theme .skill-section h2{
+    color: black;
+}
+body.light-theme .skillitem:hover{
+    color: rgb(53, 30, 182);
+}
+body.light-theme .Project-grid{
+    background-color:whitesmoke;
+}
+body.light-theme .foot{
+    background-color: beige;
+}
+body.light-theme .foot p{
+    color: black;
+}
+body.light-theme .ft a{
+    color: darkblue;
+}
+body.light-theme .ft a:hover{
+    color: darkred;
+}

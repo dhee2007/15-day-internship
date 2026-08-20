@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="intro" id="demo"></h2>
+    <div class="result"></div>
+    <div class="result"></div>
+    <div class="result"></div>
+    <h2 id="sample"></h2>
+    <h2 class="sample"></h2>
+    <h3></h3>
+    <label for="">Name</label>
+    <input type="text">
+    <script>
+        document.getElementById("demo").textContent = "Hello";
+        let example = document.getElementsByClassName("result")
+        example[0]
+            .textContent = "This is the result";
+        example[1]
+            .textContent = "of your second semester";
+        example[2]
+            .textContent = "Please check your results";
+        document.querySelector("#sample").textContent = "This is a query sample";
+        document.querySelector(".sample").textContent = "CLASS";
+        document.querySelector("h3").textContent = "Student from ramaiah";
+        document.querySelector('input[type="text"]');
+    </script><!--method to access html tags,class,id,attribute-->
+</body>
+
+</html>
+<!--DOM-Document object module-->
+<!--nodes-h1,h3,div,section,figcaption,ul,footer,meta,title-->

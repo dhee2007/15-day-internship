@@ -1,0 +1,25 @@
+ h2{
+    color: rgb(155, 39, 164);
+    background-color: rgb(187, 122, 37);
+    }
+#demo{
+    color: rgb(219, 187, 28);
+    }
+.one{
+    color: blue;
+    }
+    h2:hover{
+        color: black;
+        background-color: aquamarine;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h6:hover{
+        color: darkred;
+    }
+    h4{
+        border: 2px solid rgb(9, 8, 8);
+        width: max-content;
+        padding: 20px;
+        margin-left: 500px;
+        margin-top: 100px;
+    }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="mybtn">Click me</button>
+    <h3 id="status">LIGHT IS OFF</h3>
+    <button id="swbtn">Turn on</button>
+    <h3 id="move">Move your mouse over me</h3>
+    <script>
+        let move=document.getElementById("move");
+        move.addEventListener("mouseover",function(){
+            move.textContent="Mouse is here";
+        });
+    </script>
+</body>
+
+</html>
+<!--
+callback funtion<!--a function that passes an arguement to another function-->
+<!--addEventListener(event,function)
+
+function sum(a,b){
+    return a+b;
+}
+a,b are called as parameter/arguement

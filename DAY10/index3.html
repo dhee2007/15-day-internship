@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: rgb(17, 12, 6);
+            color: rgb(242, 242, 246);
+        }
+    </style>
+</head>
+
+<body>
+    <!--<h1 id="demo">Hello 
+    everyone</h1>
+    <a href="https://www.google.com">Go to google</a>-->
+    <button onclick="change()">click me to change the background</button>
+    <script>
+        //let result=document.querySelector("h1");
+        //result.classList.toggle("active");
+        //let link=document.querySelector("a");
+        //link.href="https://www.youtube.com";
+        function change() {
+            document.querySelector("button").classList.toggle("active");//toggle-add/remove
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aquamarine;
+            color: black;
+            padding-left: 25px;
+            padding-right: 50px;
+        }
+
+        .Logo {
+            color: brown;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .navlinks {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            animation: Move 3s ease infinite;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        @keyframes Move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(50px)
+            }
+        }
+        /*Responsive*/
+        @media(max-width:600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="Logo">BrandLogo</div>
+        <ul class="navlinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <!--to show link type 'a' tag is used -->
+            <li><a href="">Content</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

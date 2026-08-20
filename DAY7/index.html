@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            color: blueviolet;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border: 5px solid black;
+            border-radius: 8px;
+            background-color: beige;
+            transition: background 5s ease, box-shadow 1s ease
+        }/*ease-slow fast slow*/
+        .box:hover {
+            background-color: rgb(57, 141, 215);
+            color: brown;
+            box-shadow: 0 15px 50px violet;
+        }
+        /* first-top , middle-round value , last-shadow and color */
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">Hover me</div>
+</body>
+
+</html>
