@@ -819,7 +819,7 @@ body.dark-mode #theme-toggle:hover {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 .footer h2 {
