@@ -932,11 +932,20 @@ body.dark-mode .footer {
     margin: 0 auto 25px;
 }
 
-#cart-items div {
+#cart-items > div {
     background-color: white;
     padding: 18px;
     margin: 15px 0;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#cart-items > div h3 {
+    margin-bottom: 8px;
+}
+
+#cart-items > div p {
+    margin-bottom: 8px;
 }
 
 #cart-items h3 {
