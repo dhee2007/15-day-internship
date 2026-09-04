@@ -100,11 +100,13 @@ if (cartItems && cartTotal) {
             const itemElement = document.createElement("div");
 
             itemElement.innerHTML = `
-                <h3>${item.name}</h3>
+    <img src="${item.image}" class="cart-item-image">
 
-                <p>${item.price}</p>
+    <h3>${item.name}</h3>
 
-                <div class="quantity-controls">
+    <p>${item.price}</p>
+
+    <div class="quantity-controls">
 
                     <button class="quantity-btn" onclick="decreaseQuantity(${index})">
                         −
