@@ -70,8 +70,6 @@ addToCartButtons.forEach(function(button) {
     });
 
 });
-
-
 // ================= DISPLAY CART =================
 
 const cartItems = document.getElementById("cart-items");
@@ -79,28 +77,49 @@ const cartTotal = document.getElementById("cart-total");
 
 if (cartItems && cartTotal) {
 
-    if (cart.length === 0) {
+    function displayCart() {
 
-        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+        if (cart.length === 0) {
 
-    } else {
+            cartItems.innerHTML = "<p>Your cart is empty.</p>";
+            cartTotal.textContent = "Total: ₹0";
+            return;
+
+        }
 
         cartItems.innerHTML = "";
 
         let total = 0;
 
-        cart.forEach(function(item) {
+        cart.forEach(function(item, index) {
 
             const itemElement = document.createElement("div");
 
             itemElement.innerHTML = `
                 <h3>${item.name}</h3>
+
                 <p>${item.price}</p>
+
+                <div class="quantity-controls">
+
+                    <button class="quantity-btn" onclick="decreaseQuantity(${index})">
+                        −
+                    </button>
+
+                    <span>${item.quantity || 1}</span>
+
+                    <button class="quantity-btn" onclick="increaseQuantity(${index})">
+                        +
+                    </button>
+
+                </div>
             `;
 
             cartItems.appendChild(itemElement);
 
-            total += parseInt(item.price.replace("₹", ""));
+            const price = parseInt(item.price.replace("₹", ""));
+
+            total += price * (item.quantity || 1);
 
         });
 
@@ -108,7 +127,54 @@ if (cartItems && cartTotal) {
 
     }
 
+
+    // Increase quantity
+
+    window.increaseQuantity = function(index) {
+
+        if (!cart[index].quantity) {
+            cart[index].quantity = 1;
+        }
+
+        cart[index].quantity++;
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        displayCart();
+
+    };
+
+
+    // Decrease quantity
+
+    window.decreaseQuantity = function(index) {
+
+        if (!cart[index].quantity) {
+            cart[index].quantity = 1;
+        }
+
+        if (cart[index].quantity > 1) {
+
+            cart[index].quantity--;
+
+        } else {
+
+            cart.splice(index, 1);
+
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        displayCart();
+
+    };
+
+
+    displayCart();
+
 }
+
+
 // ================= CHECKOUT =================
 
 const checkoutForm = document.getElementById("checkout-form");
