@@ -718,3 +718,127 @@ body.dark-mode #theme-toggle:hover {
     border-color: #c85a17;
     color: white;
 }
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact-section {
+    padding: 70px 8%;
+    background-color: #fffaf0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.contact-intro {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info,
+.contact-form {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info h3 {
+    color: #c85a17;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c85a17;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #a9470f;
+}
+
+
+/* CONTACT DARK MODE */
+
+body.dark-mode .contact-section {
+    background-color: #171513;
+}
+
+body.dark-mode .contact-section h2 {
+    color: #f4eee7;
+}
+
+body.dark-mode .contact-intro {
+    color: #aaa19a;
+}
+
+body.dark-mode .contact-info {
+    background-color: #25211e;
+    border: 1px solid #342e29;
+}
+
+body.dark-mode .contact-info p {
+    color: #eee5dc;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #25211e;
+    color: #f4eee7;
+    border-color: #4a4038;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+    color: #aaa19a;
+}
