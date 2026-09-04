@@ -129,7 +129,7 @@ if (paymentButton) {
             paymentMessage.textContent =
                 "Order placed successfully! 🎉❤️ Thank you for ordering from Foodie Haven!";
 
-            paymentMessage.style.color = "black";
+            paymentMessage.style.color = "green";
 
             paymentButton.textContent = "Order Placed ✓";
             paymentButton.disabled = true;
