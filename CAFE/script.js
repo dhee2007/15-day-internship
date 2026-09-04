@@ -56,7 +56,7 @@ addToCartButtons.forEach(function(button) {
         const name = card.querySelector("h2").textContent;
         const price = card.querySelector("h3").textContent;
 
-        const image = card.querySelector("img").src;
+        const image = card.querySelector("img").getAttribute("src");
 
 const item = {
     name: name,
