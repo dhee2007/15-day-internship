@@ -1035,3 +1035,34 @@ body.dark-mode .footer {
     margin-top: 15px;
     font-weight: bold;
 }
+/* ================= QUANTITY BUTTONS ================= */
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.quantity-controls span {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 25px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: #c85a17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #a94710;
+}
