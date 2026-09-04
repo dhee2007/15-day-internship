@@ -130,24 +130,22 @@
 
         </div>
 
-        <div class="contact-form">
+        <form class="contact-form" id="contact-form">
 
-            <form class="contact-form" id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
 
-    <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
 
-    <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone" required>
 
-    <input type="text" id="phone" placeholder="Your Phone" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
 
-    <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
 
-    <button type="submit">Send Message</button>
+            <p id="success-message"></p>
 
-    <p id="success-message"></p>
+        </form>
 
-</form>
-        </div>
     </div>
 
 </section>
