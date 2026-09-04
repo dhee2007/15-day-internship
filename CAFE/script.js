@@ -111,31 +111,62 @@ if (cartItems && cartTotal) {
 }
 // ================= CHECKOUT =================
 
-const paymentButton = document.getElementById("payment-btn");
+const checkoutForm = document.getElementById("checkout-form");
 const paymentMethod = document.getElementById("payment-method");
 const paymentMessage = document.getElementById("payment-message");
+const paymentButton = document.getElementById("payment-btn");
 
-if (paymentButton) {
+if (checkoutForm) {
 
-    paymentButton.addEventListener("click", function () {
+    checkoutForm.addEventListener("submit", function(event) {
 
+        event.preventDefault();
+
+        // Get customer details
+        const name = document.getElementById("customer-name").value.trim();
+        const phone = document.getElementById("customer-phone").value.trim();
+        const address = document.getElementById("customer-address").value.trim();
+
+        // Check name
+        if (name === "") {
+            paymentMessage.textContent = "Please enter your full name.";
+            paymentMessage.style.color = "red";
+            return;
+        }
+
+        // Check phone
+        if (phone === "") {
+            paymentMessage.textContent = "Please enter your phone number.";
+            paymentMessage.style.color = "red";
+            return;
+        }
+
+        // Check address
+        if (address === "") {
+            paymentMessage.textContent = "Please enter your delivery address.";
+            paymentMessage.style.color = "red";
+            return;
+        }
+
+        // Check payment
         if (paymentMethod.value === "") {
-
             paymentMessage.textContent = "Please select a payment method.";
             paymentMessage.style.color = "red";
-
-        } else {
-
-            paymentMessage.textContent =
-                "Order placed successfully! 🎉❤️ Thank you for ordering from Foodie Haven!";
-
-            paymentMessage.style.color = "green";
-
-            paymentButton.textContent = "Order Placed ✓";
-            paymentButton.disabled = true;
-
-            localStorage.removeItem("cart");
+            return;
         }
+
+        // Successful order
+        paymentMessage.textContent =
+            "Order placed successfully! 🎉❤️ Thank you for ordering from Foodie Haven!";
+
+        paymentMessage.style.color = "green";
+        paymentMessage.style.fontWeight = "bold";
+
+        paymentButton.textContent = "Order Placed ✓";
+        paymentButton.disabled = true;
+
+        // Clear cart
+        localStorage.removeItem("cart");
 
     });
 
