@@ -1,3 +1,5 @@
+// ================= THEME TOGGLE =================
+
 const themeButton = document.getElementById("theme-toggle");
 
 if (themeButton) {
@@ -15,7 +17,9 @@ if (themeButton) {
     });
 
 }
-// CONTACT FORM
+
+
+// ================= CONTACT FORM =================
 
 const contactForm = document.getElementById("contact-form");
 const successMessage = document.getElementById("success-message");
@@ -33,5 +37,75 @@ if (contactForm) {
         contactForm.reset();
 
     });
+
+}
+
+
+// ================= ADD TO CART =================
+
+const addToCartButtons = document.querySelectorAll(".menu-card button");
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+addToCartButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const card = button.parentElement;
+
+        const name = card.querySelector("h2").textContent;
+        const price = card.querySelector("h3").textContent;
+
+        const item = {
+            name: name,
+            price: price
+        };
+
+        cart.push(item);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert(name + " added to cart! 🛒");
+
+    });
+
+});
+
+
+// ================= DISPLAY CART =================
+
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+
+if (cartItems && cartTotal) {
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+
+    } else {
+
+        cartItems.innerHTML = "";
+
+        let total = 0;
+
+        cart.forEach(function(item) {
+
+            const itemElement = document.createElement("div");
+
+            itemElement.innerHTML = `
+                <h3>${item.name}</h3>
+                <p>${item.price}</p>
+            `;
+
+            cartItems.appendChild(itemElement);
+
+            total += parseInt(item.price.replace("₹", ""));
+
+        });
+
+        cartTotal.textContent = "Total: ₹" + total;
+
+    }
 
 }
