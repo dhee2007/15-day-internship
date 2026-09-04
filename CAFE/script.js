@@ -1,13 +1,17 @@
 const themeButton = document.getElementById("theme-toggle");
 
-themeButton.addEventListener("click", function () {
+if (themeButton) {
 
-    document.body.classList.toggle("dark-mode");
+    themeButton.addEventListener("click", function () {
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeButton.textContent = "☀️";
-    } else {
-        themeButton.textContent = "🌙";
-    }
+        document.body.classList.toggle("dark-mode");
 
-});
+        if (document.body.classList.contains("dark-mode")) {
+            themeButton.textContent = "☀️";
+        } else {
+            themeButton.textContent = "🌙";
+        }
+
+    });
+
+}
