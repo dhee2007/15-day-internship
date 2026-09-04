@@ -15,7 +15,7 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ================= NAVBAR ================= -->
 
     <header class="site-header">
 
@@ -52,7 +52,7 @@
     </header>
 
 
-    <!-- CHECKOUT -->
+    <!-- ================= CHECKOUT PAGE ================= -->
 
     <main class="checkout-page">
 
@@ -60,40 +60,83 @@
 
         <p>Complete your order below 🍽️</p>
 
+
         <div class="checkout-container">
 
-            <h2>Delivery Details</h2>
+            <form id="checkout-form">
 
-            <input type="text" placeholder="Full Name" required>
+                <!-- DELIVERY DETAILS -->
 
-            <input type="text" placeholder="Phone Number" required>
+                <h2>Delivery Details</h2>
 
-            <textarea placeholder="Delivery Address" required></textarea>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Full Name"
+                    required
+                >
 
-            <h2>Payment</h2>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="Phone Number"
+                    required
+                >
 
-            <select id="payment-method">
+                <textarea
+                    id="customer-address"
+                    placeholder="Delivery Address"
+                    required
+                ></textarea>
 
-                <option value="">Select Payment Method</option>
 
-                <option value="upi">UPI</option>
+                <!-- PAYMENT -->
 
-                <option value="card">Credit / Debit Card</option>
+                <h2>Payment</h2>
 
-                <option value="cod">Cash on Delivery</option>
+                <select id="payment-method" required>
 
-            </select>
+                    <option value="">
+                        Select Payment Method
+                    </option>
 
-            <button id="payment-btn">
-                Pay & Place Order
-            </button>
+                    <option value="upi">
+                        UPI
+                    </option>
 
-            <p id="payment-message"></p>
+                    <option value="card">
+                        Credit / Debit Card
+                    </option>
+
+                    <option value="cod">
+                        Cash on Delivery
+                    </option>
+
+                </select>
+
+
+                <!-- PAYMENT BUTTON -->
+
+                <button
+                    type="submit"
+                    id="payment-btn"
+                >
+                    Pay & Place Order
+                </button>
+
+
+                <!-- SUCCESS / ERROR MESSAGE -->
+
+                <p id="payment-message"></p>
+
+            </form>
 
         </div>
 
     </main>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
 
