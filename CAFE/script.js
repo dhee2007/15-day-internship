@@ -56,11 +56,14 @@ addToCartButtons.forEach(function(button) {
         const name = card.querySelector("h2").textContent;
         const price = card.querySelector("h3").textContent;
 
-        const item = {
-            name: name,
-            price: price,
-            quantity: 1
-        };
+        const image = card.querySelector("img").src;
+
+const item = {
+    name: name,
+    price: price,
+    image: image,
+    quantity: 1
+};
 
         cart.push(item);
 
