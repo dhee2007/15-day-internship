@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Haven - Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <div class="LOGO">
+                FOODIE HAVEN
+            </div>
+
+            <ul class="links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+
+                <li>
+                    <a href="cart.html">Cart 🛒</a>
+                </li>
+
+            </ul>
+
+            <div class="emoji">
+
+                <button id="theme-toggle">🌙</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CHECKOUT -->
+
+    <main class="checkout-page">
+
+        <h1>Checkout</h1>
+
+        <p>Complete your order below 🍽️</p>
+
+        <div class="checkout-container">
+
+            <h2>Delivery Details</h2>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="text" placeholder="Phone Number" required>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+
+            <h2>Payment</h2>
+
+            <select id="payment-method">
+
+                <option value="">Select Payment Method</option>
+
+                <option value="upi">UPI</option>
+
+                <option value="card">Credit / Debit Card</option>
+
+                <option value="cod">Cash on Delivery</option>
+
+            </select>
+
+            <button id="payment-btn">
+                Pay & Place Order
+            </button>
+
+            <p id="payment-message"></p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
