@@ -947,28 +947,18 @@ body.dark-mode .footer {
     margin: 25px 0;
     font-size: 22px;
 }
+/* ================= CHECKOUT BUTTON ================= */
 
-#checkout-btn {
-    background-color: #c85a17;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#checkout-btn:hover {
-    opacity: 0.85;
-}
 #checkout-btn {
     display: inline-block;
     background-color: #c85a17;
     color: white;
-    padding: 8px 18px;
+    padding: 7px 16px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: normal;
     text-decoration: none;
+    border: none;
     cursor: pointer;
 }
 
