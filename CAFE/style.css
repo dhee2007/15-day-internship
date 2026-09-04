@@ -825,12 +825,12 @@ body.dark-mode #theme-toggle:hover {
 .footer h2 {
     color: white;
     font-size: 26px;
-    margin-bottom: 12px;
+    
 }
 
 .footer p {
     color: white;
-    margin-bottom: 12px;
+    
     font-size: 16px;
 }
 
