@@ -58,7 +58,8 @@ addToCartButtons.forEach(function(button) {
 
         const item = {
             name: name,
-            price: price
+            price: price,
+            quantity: 1
         };
 
         cart.push(item);
