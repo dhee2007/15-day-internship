@@ -815,37 +815,32 @@ body.dark-mode #theme-toggle:hover {
     transform: translateY(-2px);
 }
 
-
-/* =================================
-   FOOTER
-================================= */
-
 .footer {
-    background-color: #211e1b;
-    color: #f4eee7;
+    background-color: #000000;
+    color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 40px 20px;
 }
 
 .footer h2 {
-    color: #e07838;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.footer p {
-    color: #d8cec5;
+    color: white;
+    font-size: 26px;
     margin-bottom: 12px;
 }
 
+.footer p {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
 .footer .copyright {
-    border-top: 1px solid #4a4038;
+    border-top: 1px solid #555;
     padding-top: 18px;
     margin-top: 20px;
     font-size: 14px;
-    color: #aaa19a;
+    color: white;
 }
-
 
 /* =================================
    CONTACT + FOOTER DARK MODE
