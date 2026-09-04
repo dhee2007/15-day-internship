@@ -69,7 +69,13 @@ const item = {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        alert(name + " added to cart! 🛒");
+const cartCount = document.getElementById("cart-count");
+
+if (cartCount) {
+    cartCount.textContent = cart.length;
+}
+
+alert(name + " added to cart! 🛒");
 
     });
 
