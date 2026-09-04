@@ -417,4 +417,26 @@
         height: 220px;
     }
 }
+/* ================================
+   DARK MODE BUTTON
+================================ */
+
+#theme-toggle {
+    border: 1.5px solid #c85a17;
+    background-color: transparent;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #c85a17;
+    color: white;
+    transform: scale(1.05);
+}
     
