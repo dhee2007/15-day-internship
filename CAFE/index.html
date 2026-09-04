@@ -132,18 +132,22 @@
 
         <div class="contact-form">
 
-            <input type="text" placeholder="Your Name">
+            <form class="contact-form" id="contact-form">
 
-            <input type="email" placeholder="Your Email">
+    <input type="text" id="name" placeholder="Your Name" required>
 
-            <input type="text" placeholder="Your Phone">
+    <input type="email" id="email" placeholder="Your Email" required>
 
-            <textarea placeholder="Your Message"></textarea>
+    <input type="text" id="phone" placeholder="Your Phone" required>
 
-            <button type="button">Send Message</button>
+    <textarea id="message" placeholder="Your Message" required></textarea>
 
+    <button type="submit">Send Message</button>
+
+    <p id="success-message"></p>
+
+</form>
         </div>
-
     </div>
 
 </section>
