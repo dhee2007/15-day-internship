@@ -1075,3 +1075,12 @@ body.dark-mode .footer {
 .quantity-btn:hover {
     background-color: #a94710;
 }
+/* ================= CART ITEM IMAGE ================= */
+
+.cart-item-image {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
