@@ -961,3 +961,18 @@ body.dark-mode .footer {
 #checkout-btn:hover {
     opacity: 0.85;
 }
+#checkout-btn {
+    display: inline-block;
+    background-color: #c85a17;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    opacity: 0.85;
+}
