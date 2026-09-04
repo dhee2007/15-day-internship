@@ -109,3 +109,34 @@ if (cartItems && cartTotal) {
     }
 
 }
+// ================= CHECKOUT =================
+
+const paymentButton = document.getElementById("payment-btn");
+const paymentMethod = document.getElementById("payment-method");
+const paymentMessage = document.getElementById("payment-message");
+
+if (paymentButton) {
+
+    paymentButton.addEventListener("click", function () {
+
+        if (paymentMethod.value === "") {
+
+            paymentMessage.textContent = "Please select a payment method.";
+            paymentMessage.style.color = "red";
+
+        } else {
+
+            paymentMessage.textContent =
+                "Order placed successfully! 🎉❤️ Thank you for ordering from Foodie Haven!";
+
+            paymentMessage.style.color = "black";
+
+            paymentButton.textContent = "Order Placed ✓";
+            paymentButton.disabled = true;
+
+            localStorage.removeItem("cart");
+        }
+
+    });
+
+}
