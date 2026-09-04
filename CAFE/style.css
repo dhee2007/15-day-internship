@@ -1084,3 +1084,25 @@ body.dark-mode .footer {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+/* ================= CART COUNT ================= */
+
+.cart-icon {
+    position: relative;
+    text-decoration: none;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #c85a17;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
